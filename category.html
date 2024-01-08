@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Category Selection</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.categories {
+  text-align: center;
+}
+
+.category-option {
+  background-color: #db3434;
+  color: #fff;
+  padding: 15px 30px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.category-option:hover {
+  transform: scale(1.1);
+}
+body{
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: 0%;
+}
+
+
+</style>
+<body background="basket 3.jpg" >
+  <div class="categories">
+     <img src="skyline logo.png " width="120px" height="120px"     alt="waves" style="padding-top: 10px; ">
+    <h1 style="color:azure;">SELECT A CATEGORY</h1>
+    <div class="category-option" onclick="redirectTo('gym blog/gym.html')"style ="margin-bottom: 50px;" >Gym and fitness</div>
+    <div class="category-option" onclick="redirectTo('sport blog/sport.html')" style ="margin-bottom: 40px;">Sports</div>
+    <div class="category-option" onclick="redirectTo('bmi-calculator/index.html')" style ="margin-bottom: 200px;">BMI Calculator</div>
+   
+  </div>
+
+  <script>
+    function redirectTo(page) {
+      window.location.href = page;
+    }
+  </script>
+</body>
+</html>

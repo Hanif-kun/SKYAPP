@@ -1,5 +1,5 @@
 <?php
 
-$con = mysqli_connect("localhost","root","","skyline");
+$con = mysqli_connect("localhost","root","","skyline_fitness");
 
 ?>

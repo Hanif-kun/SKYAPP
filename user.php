@@ -9,10 +9,11 @@
  $email = $_POST['email'];
  $password = $_POST['password']; 
  $confirmpassword = $_POST['confirmpassword']; 
+ $id = $_POST['id']; 
  
  // database insert SQL code 
  $sql = "INSERT INTO `user` (
- `email`,`password`, `confirmpassword`) VALUES ( '$email', 
+ `id`,`email`,`password`, `confirmpassword`) VALUES ('$id','$email', 
  '$password', '$confirmpassword')";
  // insert in database
  $rs = mysqli_query($con, $sql);
